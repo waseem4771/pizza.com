@@ -1,0 +1,496 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: orangered;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    
+}
+h1{
+    color:black;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+                box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
+    inset -2px -5px 10px rgba(255,255,255,1),
+    15px 15px 10px rgba(0,0,0,0.05),
+    15px 10px 10px rgba(0,0,0,0.025);
+    transition-duration: 0.7s;
+  cursor: pointer;
+  float:left;
+}
+nav ul li a:hover{
+    background-color: white;
+            text-decoration: none;
+            color: yellowgreen;
+            border-radius: 10px;
+             box-shadow: inset 2px 6px 10px rgba(145,205,259,1);
+            border: 2px solid lightskyblue;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Active Link Style */
+nav ul li a.active {
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/*....... Index.HTML .......*/
+#container1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 63vh;
+}
+/*Setting the background image using before pseudo selector*/
+#container1::before {
+    content: '';
+    background: url("1pizza.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 59vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right: 45px;
+    font-weight: bold;
+    z-index: -1;
+    opacity: 0.89;
+    border: 2px solid yellowgreen;
+    border-bottom-left-radius: 100px;
+}
+#row1 {
+    color:white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 35px;
+}
+/*Button Styling*/
+.btn {
+    margin-top: 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+#container3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+#row2 {
+    width: 24vw;
+    height: 21vh;
+    box-shadow: 2px 7px 16px 19px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-right: 38px;
+    border-radius: 40px;
+}
+#row2::before {
+    content: '';
+    background: url('2pizza.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24vw;
+    height: 21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+#row3 {
+    position: relative;
+    width: 24vw;
+    height: 21vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 2px 7px 16px 19px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+ 
+    margin-left: 38px;
+    border-radius: 40px;
+}
+ #row3::before {
+    content: '';
+    background: url('3pizza.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24vw;
+    height: 21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+#top3 {
+    text-align: center;
+    color: red;
+    font-family: 'Ubuntu Mono', monospace;
+}
+#container4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}
+#row4 {
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('4pizza.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+#row5 {
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('5pizza.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+ 
+#row6 {
+    width: 30vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('6pizza.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+/*Designing the footer*/
+footer {
+    text-align: center;
+    background-color: orangered;
+    padding: 4px;
+    color: white;
+}
+
+
+
+/*............ LogIn.HTML .............*/
+* { box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+body {
+  font-family: 'Rubik', sans-serif;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.left {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+.right {
+  flex: 1;
+  background-color: black;
+  transition: 1s;
+  background: url('1pizza.jpg') no-repeat center center/cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header > h2 {
+  margin: 0;
+  color: yellowgreen;
+}
+.header > h4 {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(0,0,0,.4);
+}
+.form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.form > p {
+  text-align: right;
+}
+.form > p > a {
+  color: red;
+  font-size: 14px;
+}
+.form-field {
+  height: 46px;
+  padding: 0 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  outline: 0;
+  transition: .2s;
+  margin-top: 20px;
+}
+.form-field:focus {
+  border-color: red;
+}
+.form > button {
+  padding: 12px 10px;
+  border: 0;
+  background: linear-gradient(to right, orangered 0%,#0097ff 100%); 
+  border-radius: 3px ;
+  margin-top: 10px;
+  color: yellowgreen;
+  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;
+}
+.animation {
+  animation-name: move;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+.a1 {
+  animation-delay: 2s;
+}
+
+.a2 {
+  animation-delay: 2.1s;
+}
+
+.a3 {
+  animation-delay: 2.2s;
+}
+
+.a4 {
+  animation-delay: 2.3s;
+}
+
+.a5 {
+  animation-delay: 2.4s;
+}
+
+.a6 {
+  animation-delay: 2.5s;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    padding: 20px 40px;
+    width: 440px;
+  }
+}
+
+
+/*............... Registration Page .................*/
+.containers {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background:  #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(211, 84, 0, .5);
+
+}
+.containers header {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.containers .forms {
+  margin-top: 30px;
+}
+.forms .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.forms :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+.forms .column {
+  display: flex;
+  column-gap: 15px;
+}
+.forms .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.forms :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.forms .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.forms :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: red;
+  font-size: 1rem;
+}
+.forms button {
+  height: 55px;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: orangered;
+}
+.forms button:hover {
+  background: rgb(88, 56, 250);
+}
+@media screen and (max-width: 500px) {
+  .forms .column {
+    flex-wrap: wrap;
+  }
+  .forms :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+  
